@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "particles.js": "^2.0.0",
+    "bootstrap": "^5.0.2"
+  }
+}
