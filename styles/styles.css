@@ -76,6 +76,7 @@ html {
 }
 .z {
   color: #64ffda;
+  font-size: 40px;
 }
 
 @keyframes loader {
