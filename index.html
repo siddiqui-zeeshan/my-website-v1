@@ -38,6 +38,7 @@
       href="../assets/favicon-192x192.png"
       sizes="192x192"
     />
+    <script type="text/javascript" src="../js/main.js"></script>
   </head>
 
   <body>
@@ -105,11 +106,10 @@
         <a href="#one"><div id="scroll-down"></div></a>
       </div>
       <div class="pages" id="one">
-        <a href="#particles-js"><div id="scroll-up"></div></a>
         <div class="container-fluid align-self-center">
           <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-4" data-aos="fade-up" data-aos-duration="800">
+            <div class="col-md-2"></div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="800">
               <div id="mydiv">01. <a>About me</a></div>
               <p>
                 Hello, world! I am Zeeshan Siddiqui. I graduated from IIT (ISM)
@@ -130,14 +130,13 @@
                 excellence and bilateral development.
               </p>
             </div>
-            <div class="col-sm-1"></div>
-            <div class="col-sm-3">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
               <div
                 class="d-flex justify-content-center"
                 id="my-pic-div"
                 data-aos="fade-down"
                 data-aos-duration="800"
-                data-aos-delay="500"
               >
                 <img
                   src="../assets/my_pic.jpg"
@@ -147,13 +146,12 @@
                 />
               </div>
             </div>
-            <div class="col-sm-2"></div>
+            <div class="col-md-2"></div>
           </div>
         </div>
-        <a href="#two"><div id="scroll-down"></div></a>
       </div>
+      <div class="gap-bottom"></div>
       <div class="pages" id="two">
-        <a href="#one"><div id="scroll-up"></div></a>
         <div class="container-fluid align-self-center">
           <div class="row">
             <div class="col-sm-2"></div>
@@ -169,7 +167,6 @@
                     class="skills-list"
                     data-aos="fade-right"
                     data-aos-duration="800"
-                    data-aos-delay="500"
                   >
                     <li>Java</li>
                     <li>C++</li>
@@ -193,7 +190,6 @@
                   id="magic-button"
                   data-aos="fade-up"
                   data-aos-duration="800"
-                  data-aos-delay="1000"
                 >
                   Click Here To See Magic!
                 </button>
@@ -210,7 +206,6 @@
                   class="d-flex justify-content-center"
                   data-aos="fade-up"
                   data-aos-duration="800"
-                  data-aos-delay="500"
                 >
                   <button
                     type="button"
@@ -225,15 +220,61 @@
             <div class="col-sm-2"></div>
           </div>
         </div>
-        <a href="#three"><div id="scroll-down"></div></a>
       </div>
+      <div class="gap-bottom"></div>
       <div class="pages" id="three">
-        <h1 data-aos="fade-up" data-aos-duration="800">This website is still a work in progress...</h1>
+        <div class="container-fluid align-content-center">
+          <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+              <div class="d-flex justify-content-center">
+                <div id="mydiv" data-aos="fade-down" data-aos-duration="800">
+                  03. <a>I'd Love To Hear From You</a>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center" data-aos="fade-up" data-aos-duration="800">
+                <form
+                  id="my-form"
+                  action="https://formspree.io/f/xoqylzgq"
+                  method="POST"
+                >
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="FIRST NAME"
+                  />
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="LAST NAME"
+                  />
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="EMAIL"
+                  />
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="6"
+                    placeholder="YOUR MESSAGE"
+                  ></textarea>
+                  <input type="submit" id="email-submit-button" value="GO!"/>
+                </form>
+              </div>
+            </div>
+
+            <div class="col-sm-2"></div>
+          </div>
+        </div>
       </div>
+      <div class="gap-bottom"></div>
     </div>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       particlesJS.load("particles-js", "../assets/particles.json", function () {
@@ -241,85 +282,7 @@
       });
     </script>
     <script>
-      $(window).on("load", function () {
-        $(".loader-container").delay(1500).fadeOut("slow");
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        $("#magic-button").on("click", function (event) {
-          $("#normal-list").hide("slow");
-          $(this).hide("slow");
-          $("#magic-button-revert").show("slow");
-          $("#holder").show("slow");
-        });
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        $("#magic-button-revert").on("click", function (event) {
-          $("#normal-list").show("slow");
-          $(this).hide("slow");
-          $("#magic-button").show("slow");
-          $("#holder").hide("slow");
-        });
-      });
-    </script>
-    <script>
       AOS.init();
-    </script>
-    <script>
-      $(document).ready(function () {
-        var entries = [
-          { label: "Java" },
-          { label: "C++" },
-          { label: "Python" },
-          { label: "Javascript" },
-          { label: "Node.js" },
-          { label: "Spring" },
-          { label: "Spring Boot" },
-          { label: "AWS" },
-          { label: "REST" },
-          { label: "ANdroid Development" },
-          { label: "Bootstrap" },
-          { label: "JQuery" },
-          { label: "Backend Development" },
-          { label: "Machine Learning" },
-        ];
-
-        var settings = {
-          entries: entries,
-          width: 480,
-          height: 480,
-          radius: "65%",
-          radiusMin: 75,
-          bgDraw: true,
-          bgColor: "#0a192f",
-          opacityOver: 1.0,
-          opacityOut: 0.05,
-          opacitySpeed: 6,
-          fov: 800,
-          speed: 1,
-          fontFamily: "Arial, sans-serif",
-          fontSize: "15",
-          fontColor: "#64ffda",
-          fontWeight: "normal", //bold
-          fontStyle: "normal", //italic
-          fontStretch: "normal", //wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
-          fontToUpperCase: true,
-          tooltipFontFamily: "Arial, sans-serif",
-          tooltipFontSize: "11",
-          tooltipFontColor: "#fff",
-          tooltipFontWeight: "normal", //bold
-          tooltipFontStyle: "normal", //italic
-          tooltipFontStretch: "normal", //wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
-          tooltipFontToUpperCase: false,
-          tooltipTextAnchor: "middle",
-          tooltipDiffX: 0,
-          tooltipDiffY: 20,
-        };
-        $("#holder").svg3DTagCloud(settings);
-      });
     </script>
   </body>
 </html>
