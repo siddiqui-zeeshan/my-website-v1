@@ -69,5 +69,43 @@ $(document).ready(function () {
 });
 
 $(window).on("load", function () {
-  $(".loader-container").delay(1500).fadeOut("slow");
+  $("#loader-container").delay(1500).fadeOut("slow");
+});
+
+
+
+$(document).ready(function () {
+
+  if (screen.width < 576) {
+      $("#side-footer").hide();
+  }
+  else {
+
+      $("#side-footer").show();
+  }
+
+});
+
+$(document).ready(function () {
+
+  if (screen.width < 576) {
+      $("#side-footer-2").hide();
+  }
+  else {
+
+      $("#side-footer-2").show();
+  }
+
+});
+
+$(document).ready(function () {
+
+  if (screen.width < 576) {
+      $(".footer-icon-container").show();
+  }
+  else {
+
+      $(".footer-icon-container").hide();
+  }
+
 });
