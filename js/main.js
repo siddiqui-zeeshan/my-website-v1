@@ -31,7 +31,7 @@ $(document).ready(function () {
     speed: 1,
     fontFamily: "Arial, Helvetica, sans-serif",
     fontSize: "15",
-    fontColor: "#64ffda",
+    fontColor: "#8892b0",
     fontWeight: "normal", //bold
     fontStyle: "normal", //italic
     fontStretch: "normal", //wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
