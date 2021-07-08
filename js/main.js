@@ -29,14 +29,14 @@ $(document).ready(function () {
     opacitySpeed: 6,
     fov: 800,
     speed: 1,
-    fontFamily: "Arial, sans-serif",
+    fontFamily: "Arial, Helvetica, sans-serif",
     fontSize: "15",
     fontColor: "#64ffda",
     fontWeight: "normal", //bold
     fontStyle: "normal", //italic
     fontStretch: "normal", //wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
     fontToUpperCase: true,
-    tooltipFontFamily: "Arial, sans-serif",
+    tooltipFontFamily: "Arial, Helvetica, sans-serif",
     tooltipFontSize: "11",
     tooltipFontColor: "#fff",
     tooltipFontWeight: "normal", //bold
